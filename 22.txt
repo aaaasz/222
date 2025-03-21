@@ -1,0 +1,45 @@
+[custom]
+;不要随意改变关键字，否则会导致出错
+;acl4SSR规则
+
+;去广告：支持
+;自动测速：支持
+;微软分流：支持
+;苹果分流：支持
+;增强中国IP段：支持
+;增强国外GFW：支持
+
+;设置规则标志位
+ruleset=🛑 全球拦截,https://raw.githubusercontent.com/mphin/proxy_tools/main/rules/Adblack.txt
+ruleset=📲 电报消息,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
+ruleset=📹 油管视频,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
+ruleset=📢 谷歌FCM,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
+ruleset=🎥 国外媒体,https://raw.githubusercontent.com/aaaasz/112/refs/heads/main/1.txt
+ruleset=🚀 节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
+ruleset=🚀 节点选择,https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/GlobalDirect.list
+ruleset=🚀 节点选择,https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/LocalAreaNetwork.list
+ruleset=🚀 节点选择,https://raw.githubusercontent.com/cutethotw/ClashRule/main/Outside.list
+
+
+
+
+
+;设置规则标志位
+
+;设置分组标志位
+custom_proxy_group=🚀 节点选择`select`.*`[]♻️ 自动选择`[]🔮 负载均衡
+custom_proxy_group=♻️ 自动选择`url-test`.*`http://www.gstatic.com/generate_204`100,,5
+custom_proxy_group=🔮 负载均衡`load-balance`.*`http://www.gstatic.com/generate_204`100
+custom_proxy_group=📲 电报消息`select`[]🚀 节点选择
+custom_proxy_group=📹 油管视频`select`[]🚀 节点选择
+custom_proxy_group=📢 谷歌FCM`select`[]🚀 节点选择
+custom_proxy_group=🛑 全球拦截`select`[]REJECT
+custom_proxy_group=🎥 国外媒体`select`[]🚀 节点选择
+;设置分组标志位
+
+enable_rule_generator=true
+overwrite_original_rules=true
+
+;clash_rule_base=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GeneralClashConfig.yml
+
+;luck
