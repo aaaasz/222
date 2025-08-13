@@ -15,10 +15,11 @@ ruleset=📲 电报消息,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/mast
 ruleset=📹 油管视频,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
 ruleset=📢 谷歌FCM,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
 ruleset=🎥 国外媒体,https://raw.githubusercontent.com/aaaasz/112/refs/heads/main/1.txt
-ruleset=🚀 节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
-ruleset=🚀 节点选择,https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/GlobalDirect.list
-ruleset=🚀 节点选择,https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/LocalAreaNetwork.list
-ruleset=🚀 节点选择,https://raw.githubusercontent.com/cutethotw/ClashRule/main/Outside.list
+ruleset=🚀 节点选择,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyGFWlist.list
+ruleset=🚀 节点选择,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Download.list
+ruleset=🚀 节点选择,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list
+ruleset=🚀 节点选择,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
+ruleset=🚀 节点选择,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaMedia.list
 
 
 
@@ -41,5 +42,6 @@ enable_rule_generator=true
 overwrite_original_rules=true
 
 ;clash_rule_base=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GeneralClashConfig.yml
+
 
 ;luck
