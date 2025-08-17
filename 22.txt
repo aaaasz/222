@@ -22,9 +22,6 @@ ruleset=🚀 节点选择,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@mast
 ruleset=🚀 节点选择,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
 ruleset=🚀 节点选择,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaMedia.list
 
-- DOMAIN-SUFFIX,missav.ws,🎥 国外媒体
-- DOMAIN-SUFFIX,missav.ai,🎥 国外媒体
-- DOMAIN-SUFFIX,missav.live,🎥 国外媒体
 
 
 ;设置规则标志位
@@ -40,13 +37,14 @@ custom_proxy_group=🛑 全球拦截`select`[]REJECT
 custom_proxy_group=🎥 国外媒体`select`[]🚀 节点选择
 ;设置分组标志位
 
-enable_rule_generator=flase
-overwrite_original_rules=flase
+enable_rule_generator=ture
+overwrite_original_rules=ture
 
 ;clash_rule_base=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GeneralClashConfig.yml
 
 
 ;luck
+
 
 
 
