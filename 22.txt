@@ -22,8 +22,9 @@ ruleset=🚀 节点选择,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@mast
 ruleset=🚀 节点选择,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
 ruleset=🚀 节点选择,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaMedia.list
 
-
-
+- DOMAIN-SUFFIX,missav.ws,🎥 国外媒体
+- DOMAIN-SUFFIX,missav.ai,🎥 国外媒体
+- DOMAIN-SUFFIX,missav.live,🎥 国外媒体
 
 
 ;设置规则标志位
@@ -46,4 +47,5 @@ overwrite_original_rules=true
 
 
 ;luck
+
 
