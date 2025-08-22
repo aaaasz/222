@@ -509,26 +509,17 @@ USER-AGENT,com.google.ios.youtubemusic*
 DOMAIN,music.youtube.com
 
 # missav
-DOMAIN-SUFFIX,missav.ai
-DOMAIN-SUFFIX,missav.ws
-DOMAIN-SUFFIX,missav.live
-DOMAIN-SUFFIX,hsex.men
-DOMAIN-SUFFIX,hsex.icu
-# Ymissav
 USER-AGENT,*missav*
+USER-AGENT,*com.google.ios.missav*
 USER-AGENT,missav*
 USER-AGENT,com.google.ios.missav*
-DOMAIN-KEYWORD,youtube
-DOMAIN,youtubei.googleapis.com
-DOMAIN,yt3.ggpht.com
-DOMAIN-SUFFIX,googlevideo.com
-DOMAIN-SUFFIX,gvt2.com
-DOMAIN-SUFFIX,withyoutube.com
-DOMAIN-SUFFIX,youtu.be
-DOMAIN-SUFFIX,youtube-nocookie.com
-DOMAIN-SUFFIX,youtube.com
-DOMAIN-SUFFIX,youtubeeducation.com
-DOMAIN-SUFFIX,youtubegaming.com
-DOMAIN-SUFFIX,youtubekids.com
-DOMAIN-SUFFIX,yt.be
-DOMAIN-SUFFIX,ytimg.com
+DOMAIN,missav.ai
+DOMAIN,missav.live
+DOMAIN,missav.ws
+# hsex
+USER-AGENT,*hsex*
+USER-AGENT,*com.google.ios.hsex*
+USER-AGENT,hsex*
+USER-AGENT,com.google.ios.hsex*
+DOMAIN,hsex.icu
+DOMAIN,hsex.men
