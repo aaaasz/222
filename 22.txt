@@ -1,65 +1,58 @@
-# 模版名称：ACL4SSR.ini
-# 模版最后更新日期：2025/02/11 01:22:37
-# 配置生成日期：2025-04-02 15:10:08
+[custom]
+;不要随意改变关键字，否则会导致出错
+;acl4SSR规则
 
-mixed-port: 7890
-allow-lan: false
-mode: rule
-log-level: info
-ipv6: false
-external-controller: 0.0.0.0:9090
-dns:
-  enable: true
-  listen: 0.0.0.0:53
-  ipv6: false
-  default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
-  nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
-    - 119.29.29.29
-    - 180.76.76.76
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - '*.lan'
-    - '*.localdomain'
-    - '*.example'
-    - '*.invalid'
-    - '*.localhost'
-    - '*.test'
-    - '*.local'
-    - '*.home.arpa'
-    - router.asus.com
-    - localhost.sec.qq.com
-    - localhost.ptlogin2.qq.com
-    - +.msftconnecttest.com
-tun:
-  enable: true
-  stack: system
-  auto-route: true
-  auto-detect-interface: true
-  dns-hijack:
-    - 114.114.114.114
-    - 180.76.76.76
-    - 119.29.29.29
-    - 223.5.5.5
-    - 8.8.8.8
-    - 8.8.4.4
-    - 1.1.1.1
-    - 1.0.0.1
+;去广告：支持
+;自动测速：支持
+;微软分流：支持
+;苹果分流：支持
+;增强中国IP段：支持
+;增强国外GFW：支持
+
+;设置规则标志位
+ruleset=🛑 全球拦截,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list
+ruleset=🛑 全球拦截,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list
+ruleset=📲 电报消息,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Telegram.list
+ruleset=🎥 国外媒体,https://gh-proxy.com/https://raw.githubusercontent.com/aaaasz/222/refs/heads/main/ProxyMedia.list
+ruleset=📹 油管视频,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/YouTube.list
+ruleset=📢 谷歌FCM,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/GoogleFCM.list
+ruleset=🚀 节点选择,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
+ruleset=🚀 节点选择,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/UnBan.list
+ruleset=🚀 节点选择,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/GoogleCN.list
+ruleset=🚀 节点选择,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/SteamCN.list
+ruleset=🚀 节点选择,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
+ruleset=🚀 节点选择,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list
+ruleset=🚀 节点选择,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaMedia.list
+ruleset=🚀 节点选择,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyGFWlist.list
+ruleset=🚀 节点选择,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/GoogleFCM.list
+ruleset=🚀 节点选择,https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Download.list
+
+
+
+;设置规则标志位
 
 ;设置分组标志位
 custom_proxy_group=🚀 节点选择`select`.*`[]♻️ 自动选择`[]🔮 负载均衡
 custom_proxy_group=♻️ 自动选择`url-test`.*`http://www.gstatic.com/generate_204`100,,5
 custom_proxy_group=🔮 负载均衡`load-balance`.*`http://www.gstatic.com/generate_204`100
-custom_proxy_group=📲 电报信息`select`[]🚀 节点选择
+custom_proxy_group=📲 电报消息`select`[]🚀 节点选择
 custom_proxy_group=📹 油管视频`select`[]🚀 节点选择
 custom_proxy_group=📢 谷歌FCM`select`[]🚀 节点选择
 custom_proxy_group=🛑 全球拦截`select`[]REJECT
-custom_proxy_group=🌍 国外媒体`select`[]🚀 节点选择
-custom_proxy_group=🎯 全球直连`select`[]🚀 节点选择`[]REJECT
-custom_proxy_group=🍃 应用净化`select`[]REJECT
+custom_proxy_group=🎥 国外媒体`select`[]🚀 节点选择
+;设置分组标志位
+
+enable_rule_generator=true
+overwrite_original_rules=true
+
+;clash_rule_base=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GeneralClashConfig.yml
+
+
+;luck
+
+
+
+
+
 
 
