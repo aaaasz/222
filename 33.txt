@@ -1,4 +1,66 @@
+# 模版名称：ACL4SSR.ini
+# 模版最后更新日期：2025/02/11 01:22:37
+# 配置生成日期：2025-04-02 15:10:08
 
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 0.0.0.0:9090
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  ipv6: false
+  default-nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+  nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+    - 119.29.29.29
+    - 180.76.76.76
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - '*.localdomain'
+    - '*.example'
+    - '*.invalid'
+    - '*.localhost'
+    - '*.test'
+    - '*.local'
+    - '*.home.arpa'
+    - router.asus.com
+    - localhost.sec.qq.com
+    - localhost.ptlogin2.qq.com
+    - +.msftconnecttest.com
+tun:
+  enable: true
+  stack: system
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+    - 114.114.114.114
+    - 180.76.76.76
+    - 119.29.29.29
+    - 223.5.5.5
+    - 8.8.8.8
+    - 8.8.4.4
+    - 1.1.1.1
+    - 1.0.0.1
+
+;设置分组标志位
+custom_proxy_group=🚀 节点选择`select`.*`[]♻️ 自动选择`[]🔮 负载均衡
+custom_proxy_group=♻️ 自动选择`url-test`.*`http://www.gstatic.com/generate_204`100,,5
+custom_proxy_group=🔮 负载均衡`load-balance`.*`http://www.gstatic.com/generate_204`100
+custom_proxy_group=📲 电报信息`select`[]🚀 节点选择
+custom_proxy_group=📹 油管视频`select`[]🚀 节点选择
+custom_proxy_group=📢 谷歌FCM`select`[]🚀 节点选择
+custom_proxy_group=🛑 全球拦截`select`[]REJECT
+custom_proxy_group=🌍 国外媒体`select`[]🚀 节点选择
+custom_proxy_group=🎯 全球直连`select`[]🚀 节点选择`[]REJECT
+custom_proxy_group=🍃 应用净化`select`[]REJECT
 rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
